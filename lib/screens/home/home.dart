@@ -28,6 +28,35 @@ class _HomePageState extends State<HomePage> {
           const ActiveCourse(),
         ],
       )),
+      bottomNavigationBar: _builtBottomNavigationBar(),
+    );
+  }
+
+  BottomNavigationBar _builtBottomNavigationBar() {
+    return BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
+      backgroundColor: kBackground,
+      showSelectedLabels: false,
+      showUnselectedLabels: false,
+      items: [
+        BottomNavigationBarItem(
+            icon: Container(
+              padding: EdgeInsets.only(bottom: 4),
+              decoration: BoxDecoration(
+                  border: Border(bottom: BorderSide(color: kAccent, width: 2))),
+              child: Text(
+                'Home',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+            label: 'home'),
+        BottomNavigationBarItem(
+            label: 'calendar', icon: Icon(Icons.calendar_today_rounded)),
+        BottomNavigationBarItem(
+            label: 'bookmark', icon: Icon(Icons.bookmark_border_outlined)),
+        BottomNavigationBarItem(
+            label: 'user', icon: Icon(Icons.supervised_user_circle_rounded)),
+      ],
     );
   }
 

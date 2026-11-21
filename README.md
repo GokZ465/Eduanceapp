@@ -47,3 +47,8 @@ The application has sophisticated roadmaps to help guide new programmers in choo
 
 - [@Vishwak-Kiran](https://github.com/Vishwak-Kiran)
 - [@GokZ465](https://github.com/GokZ465)
+
+
+## License
+
+This project is licensed under the MIT License.
